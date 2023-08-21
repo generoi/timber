@@ -10,11 +10,12 @@ class Integrations {
 
 	var $acf;
 	var $coauthors_plus;
+	var $wpml;
 
 	public function __construct() {
 		$this->init();
 	}
-    
+
 	public function init() {
 		add_action('init', array($this, 'maybe_init_integrations'));
 
